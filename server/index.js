@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   res.send('Hello dasdsadsaWorld!');
 });
 
-app.post('/register', (req, res) => {
+app.post('/api/users/register', (req, res) => {
   //회원가입할 때 필요한 정보들 가져오면 db에 넣어줌
   const user = new User(req.body);
 
@@ -33,7 +33,7 @@ app.post('/register', (req, res) => {
   });
 });
 
-app.post('/login', (req, res) => {
+app.post('/api/users/login', (req, res) => {
   User.findOne({ email: req.body.email }, (err, user) => {
     if (!user) {
       return res.json({
@@ -63,6 +63,7 @@ app.get('/api/users/auth', auth, (req, res) => {
     isAdmin: req.user.role === 0 ? false : true,
     isAuth: true,
     email: req.user.email,
+    name: req.user.name,
     role: req.user.role,
   });
 });
