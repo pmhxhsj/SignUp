@@ -1,0 +1,39 @@
+.landingPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landingElement {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.registerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+}
