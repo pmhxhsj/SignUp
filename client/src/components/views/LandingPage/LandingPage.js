@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import styles from '../../../style/Style.module.css';
+import btnStyles from '../../../style/Btn.module.css';
+import { Link } from 'react-router-dom';
 
 function LandingPage() {
   useEffect(() => {
@@ -20,8 +23,21 @@ function LandingPage() {
   };
   return (
     <div>
-      <h1>Draw Space</h1>
-      <button onClick={onClickHandler}>Logout</button>
+      <header className={styles.header}>
+        <div className={styles.firstHeader}>
+          <Link to='/login'>
+            <button className={btnStyles.landingPageBtn}>로그인</button>
+          </Link>
+
+          <Link to='/login'>
+            <button className={btnStyles.landingPageBtn}>마이페이지</button>
+          </Link>
+        </div>
+        <h1 className={styles.logo}>Draw Space</h1>
+      </header>
+      <div className={styles.landingPage}>
+        <div className={styles.landingElement}>{/* <button onClick={onClickHandler}>Logout</button> */}</div>
+      </div>
     </div>
   );
 }
