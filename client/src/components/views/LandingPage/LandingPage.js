@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import styles from '../../../style/Style.module.css';
 import btnStyles from '../../../style/Btn.module.css';
 import { Link } from 'react-router-dom';
-
+import Footer from '../Footer/Footer';
 function LandingPage() {
   useEffect(() => {
     axios.get('/api/hello').then((res) => console.log(res));
@@ -34,10 +34,23 @@ function LandingPage() {
           </Link>
         </div>
         <h1 className={styles.logo}>Draw Space</h1>
+        <div className={styles.menuBar}>
+          <button className={btnStyles.landingPageBtn}>Preview</button>
+          <button className={btnStyles.landingPageBtn}>Upload</button>
+          <button className={btnStyles.landingPageBtn}>Review</button>
+        </div>
+
+        <div className={styles.landingImage}>
+          <img className={styles.mainImage} src='img/artist.jpg' alt='artist' />
+        </div>
       </header>
       <div className={styles.landingPage}>
-        <div className={styles.landingElement}>{/* <button onClick={onClickHandler}>Logout</button> */}</div>
+        {/* <div className={styles.landingElement}>
+          <button onClick={onClickHandler}>Logout</button>
+        </div> */}
       </div>
+
+      <Footer />
     </div>
   );
 }
