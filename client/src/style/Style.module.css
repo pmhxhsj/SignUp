@@ -16,8 +16,25 @@
   align-items: right;
 }
 
+.menuBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.mainImage {
+  width: 800px;
+}
+
 .logo {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
 }
 .header {
@@ -50,4 +67,12 @@
 .registerForm {
   display: flex;
   flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(175, 175, 175);
 }
