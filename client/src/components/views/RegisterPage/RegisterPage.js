@@ -44,18 +44,21 @@ function RegisterPage() {
       return alert('패스워드가 일치하지 않습니다.');
     }
 
+    if (Password.length < 8 || ConfirmPassword.length < 8) {
+      return alert('패스워드는 최소 8자리 이상이어야합니다.');
+    }
+
     let body = {
       email: Email,
       name: Name,
       number: Number,
-      password: Password,
     };
 
     dispatch(registerUser(body)).then((response) => {
       if (response.payload.success) {
         navigate('/login');
       } else {
-        alert('Failed to sign up');
+        alert('이메일이 존재합니다.');
       }
     });
   };
@@ -65,6 +68,12 @@ function RegisterPage() {
       <div className={loginPage.loginFormContainer}>
         <div className={loginPage.registerFormRightSide}>
           <div className={loginPage.topLogoWrap}></div>
+          <h1>
+            <strong>Thank you for signing up as a member.</strong> <br />
+          </h1>
+          <p>
+            <strong>-to a great artist-</strong>
+          </p>
         </div>
         <div className={loginPage.loginFormLeftSide}>
           <div className={loginPage.loginTopWrap}></div>
@@ -90,15 +99,6 @@ function RegisterPage() {
               </div>
               <div className={loginPage.loginInputWrap}>
                 <input
-                  type='text'
-                  className={loginPage.phoneNumberInput}
-                  value={Number}
-                  onChange={onNumberHandler}
-                  placeholder="Phone Number ( without ' - ' )"
-                />
-              </div>
-              <div className={loginPage.loginInputWrap}>
-                <input
                   type='password'
                   className={loginPage.passwordInput}
                   value={Password}
@@ -118,31 +118,19 @@ function RegisterPage() {
             </div>
 
             <div className={loginPage.loginBtnWrap}>
-              <button type='submit' className={loginPage.loginBtn}>
+              <button type='submit' className={loginPage.registerBtn}>
                 Sign Up
               </button>
+              <Link to='/login'>
+                <button type='submit' className={loginPage.registerBtn}>
+                  Login Page
+                </button>
+              </Link>
             </div>
           </form>
         </div>
       </div>
     </div>
-    // <div className={styles.registerPage}>
-    //   <form onSubmit={onSubmitHandler} className={styles.registerForm}>
-    //     <label>Email</label>
-    //     <input type='email' value={Email} onChange={onEmailHandler} />
-
-    //     <label>Name</label>
-    //     <input type='text' value={Name} onChange={onNameHandler} />
-
-    //     <label>Password</label>
-    //     <input type='password' value={Password} onChange={onPasswordHandler} />
-
-    //     <label>Confirm Password</label>
-    //     <input type='password' value={ConfirmPassword} onChange={onConfirmPasswordHandler}></input>
-    //     <br />
-    //     <button type='submit'>회원가입</button>
-    //   </form>
-    // </div>
   );
 }
 
