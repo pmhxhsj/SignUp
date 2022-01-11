@@ -44,10 +44,13 @@ function Login() {
       <div className={loginPage.loginFormContainer}>
         <div className={loginPage.loginFormRightSide}>
           <div className={loginPage.topLogoWrap}></div>
-          <h1>더 많은 작가들의 작품을 보고싶다면?</h1>
+          <h1>
+            Would you like to see more of the <strong>Artist's WORK?</strong>
+          </h1>
           <p>
-            쉽게 회원가입 및 로그인을 진행할 수 있습니다.
-            <br /> 회원가입을 하고 모든 기능을 무료로 누려보세요
+            Easily sign up and log in.
+            <br /> Sign up and enjoy all features <br />
+            <strong>for free👍🏼</strong>
           </p>
         </div>
         <div className={loginPage.loginFormLeftSide}>
@@ -55,13 +58,13 @@ function Login() {
             <span>Don't have an account?</span>
 
             <Link to='/register'>
-              <button className={loginPage.createAccountBtn}>Create Profile</button>
+              <button className={loginPage.createAccountBtn}>Sign Up</button>
             </Link>
           </div>
           <form onSubmit={onSubmitHandler}>
             <div className={loginPage.loginInputContainer}>
               <div className={loginPage.loginInputWrap}>
-                <i class={loginPage.farFaEnvelope}></i>
+                <i className={loginPage.farFaEnvelope}></i>
                 <input
                   type='email'
                   className={loginPage.emailInput}
@@ -84,8 +87,13 @@ function Login() {
 
             <div className={loginPage.loginBtnWrap}>
               <button type='submit' className={loginPage.loginBtn}>
-                Login
+                Sign in
               </button>
+              <Link to='/'>
+                <button type='submit' className={loginPage.loginBtn}>
+                  Main Page
+                </button>
+              </Link>
             </div>
           </form>
         </div>

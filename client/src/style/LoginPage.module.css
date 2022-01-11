@@ -31,8 +31,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-image: radial-gradient(ellipse farthest-corner at 0 140%, #5d9dff 0%, #2178ff 70%, #3585ff 70%);
+  background-color: #234e70;
 }
 
 .registerFormRightSide {
@@ -43,22 +42,42 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-image: radial-gradient(ellipse farthest-corner at 0 150%, #5d9dff 50%, #2178ff 50%, #3585ff 50%);
+  color: #fbeaeb;
+  background-color: #2e3c7e;
 }
 
 .loginFormRightSide h1 {
-  color: white;
+  color: #fbeaeb;
+  font-size: 35px;
+  font-weight: bold;
   width: 100%;
   text-align: right;
   opacity: 0.9;
 }
 .loginFormRightSide p {
-  padding-top: 50px;
-  font-size: 12px;
+  color: #fbeaeb;
+  padding-top: 40px;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.registerFormRightSide h1 {
+  color: #fbeaeb;
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  text-align: right;
+  opacity: 0.9;
+}
+.registerFormRightSide p {
+  color: #fbeaeb;
+  padding-top: 40px;
+  font-size: 18px;
   text-align: right;
   opacity: 0.8;
 }
+
 .loginFormLeftSide {
   width: 50%;
   border-radius: 0px 10px 10px 0px;
@@ -92,7 +111,8 @@
   width: 85px;
   height: 35px;
   font-size: 11px;
-  color: #2178ff;
+  color: white;
+  background-color: #234e70;
   border-radius: 3px;
 }
 .loginInputContainer {
@@ -101,7 +121,7 @@
 }
 
 .registerInputContainer {
-  padding-top: 50px;
+  padding-top: 30px;
   width: 300px;
 }
 
@@ -110,10 +130,10 @@
   height: 45px;
   margin-top: 20px;
   border-radius: 2px;
-  border-bottom: solid 2px #2178ff;
+  border-bottom: solid 2px #234e70;
 }
 .loginInputWrap i {
-  color: #2178ff;
+  color: #234e70;
   line-height: 45px;
 }
 
@@ -135,16 +155,36 @@
   align-items: center;
 }
 .loginBtnWrap .loginBtn {
+  font-size: 14px;
   width: 95px;
   height: 35px;
   color: white;
   border: 0;
   border-radius: 4px;
 
-  background: rgb(105, 163, 255);
-  background: linear-gradient(162deg, rgba(105, 163, 255, 1) 0%, rgba(43, 125, 254, 1) 50%, rgba(43, 125, 254, 1) 100%);
+  background-color: #234e70;
+  /* background: linear-gradient(162deg, rgba(105, 163, 255, 1) 0%, rgba(43, 125, 254, 1) 50%, rgba(43, 125, 254, 1) 100%); */
 }
 .loginBtnWrap a {
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 11px;
+  color: gray;
+}
+
+.loginBtnWrap .registerBtn {
+  font-size: 14px;
+  width: 95px;
+  height: 35px;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+
+  background-color: #2e3c7e;
+  /* background: linear-gradient(162deg, rgba(105, 163, 255, 1) 0%, rgba(43, 125, 254, 1) 50%, rgba(43, 125, 254, 1) 100%); */
+}
+
+.registerBtnWrap a {
   margin-top: 10px;
   text-decoration: none;
   font-size: 11px;

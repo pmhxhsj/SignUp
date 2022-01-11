@@ -50,19 +50,19 @@ function LandingPage() {
           {BoolLogin() ? (
             <div>
               <button className={btnStyles.landingPageBtn} onClick={onClickHandler}>
-                로그아웃
+                Sign Out
               </button>
               <Link to='/login'>
-                <button className={btnStyles.landingPageBtn}>마이페이지</button>
+                <button className={btnStyles.landingPageBtn}>My Page</button>
               </Link>
             </div>
           ) : (
             <div>
               <Link to='/login'>
-                <button className={btnStyles.landingPageBtn}>로그인</button>
+                <button className={btnStyles.logBtn}>Sign in</button>
               </Link>
               <Link to='/register'>
-                <button className={btnStyles.landingPageBtn}>회원가입</button>
+                <button className={btnStyles.logBtn}>Sign Up</button>
               </Link>
             </div>
           )}
@@ -74,7 +74,6 @@ function LandingPage() {
           <button className={btnStyles.landingPageBtn}>Author</button>
           <button className={btnStyles.landingPageBtn}>Poet</button>
           <button className={btnStyles.landingPageBtn}>Artist</button>
-          <button className={btnStyles.landingPageBtn}>Review</button>
         </nav>
 
         <div className={styles.landingImage}>
