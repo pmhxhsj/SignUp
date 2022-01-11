@@ -1,5 +1,18 @@
 .landingPageBtn {
+  margin: 10px 10px;
   border: 0px;
   background-color: white;
   color: gray;
+}
+
+.logBtn {
+  margin-top: 10px;
+  margin-right: 30px;
+  border: 0px;
+  background-color: white;
+  color: #2178ff;
+}
+
+.loginPageBtn {
+  background-color: white;
 }

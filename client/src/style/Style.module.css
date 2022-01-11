@@ -55,6 +55,37 @@
 .loginForm {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPageTitle {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.loginForm input {
+  margin: 5px 5px;
+  width: 200px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%); */
+}
+
+.loginForm button {
+  width: 200px;
+  height: 30px;
+  margin: 5px 5px;
+  border: 0;
+  border-radius: 15px;
+  background-color: rgb(233, 233, 233);
+  color: rgb(88, 88, 88);
 }
 
 .registerPage {
