@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: #eff0f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginFormContainer {
+  background: #f5f5f5;
+  width: 860px;
+  height: 540px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px black;
+  border-radius: 10px;
+}
+
+.loginFormRightSide {
+  width: 50%;
+  border-radius: 10px 0px 0px 10px;
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: radial-gradient(ellipse farthest-corner at 0 140%, #5d9dff 0%, #2178ff 70%, #3585ff 70%);
+}
+.loginFormRightSide h1 {
+  color: white;
+  width: 100%;
+  text-align: right;
+  opacity: 0.9;
+}
+.loginFormRightSide p {
+  padding-top: 50px;
+  font-size: 12px;
+  text-align: right;
+  opacity: 0.8;
+}
+.loginFormLeftSide {
+  width: 50%;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    287deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(243, 244, 244, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.loginFormLeftSide .loginTopWrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.loginFormLeftSide .loginTopWrap span {
+  color: gray;
+  font-size: 11px;
+  padding-right: 20px;
+}
+.loginFormLeftSide .loginTopWrap .createAccountBtn {
+  background: white;
+  border: 0;
+  width: 85px;
+  height: 35px;
+  font-size: 11px;
+  color: #2178ff;
+  border-radius: 3px;
+}
+.loginInputContainer {
+  padding-top: 120px;
+  width: 300px;
+}
+.loginInputContainer .loginInputWrap {
+  width: 300px;
+  height: 45px;
+  margin-top: 20px;
+  border-radius: 2px;
+  border-bottom: solid 2px #2178ff;
+}
+.loginInputContainer .loginInputWrap i {
+  color: #2178ff;
+  line-height: 45px;
+}
+
+.loginInputContainer .loginInputWrap input {
+  background: none;
+
+  border: none;
+  line-height: 45px;
+  padding-left: 10px;
+  width: 267px;
+}
+.loginInputContainer .loginInputWrap input:focus {
+  outline: none;
+}
+.loginBtnWrap {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginBtnWrap .loginBtn {
+  width: 95px;
+  height: 35px;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+
+  background: rgb(105, 163, 255);
+  background: linear-gradient(162deg, rgba(105, 163, 255, 1) 0%, rgba(43, 125, 254, 1) 50%, rgba(43, 125, 254, 1) 100%);
+}
+.loginBtnWrap a {
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 11px;
+  color: gray;
+}
