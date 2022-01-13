@@ -10,10 +10,6 @@ import { useDispatch } from 'react-redux';
 import { auth } from '../../../_actions/user_action';
 import { set } from 'mongoose';
 function LandingPage() {
-  // useEffect(() => {
-  //   axios.get('/api/hello').then((res) => console.log(res));
-  // }, []);
-
   let navigate = useNavigate();
 
   const onClickHandler = () => {

@@ -19,10 +19,6 @@ function RegisterPage() {
     setEmail(e.currentTarget.value);
   };
 
-  const onNumberHandler = (e) => {
-    setNumber(e.currentTarget.value);
-  };
-
   const onNameHandler = (e) => {
     setName(e.currentTarget.value);
   };
@@ -51,7 +47,7 @@ function RegisterPage() {
     let body = {
       email: Email,
       name: Name,
-      number: Number,
+      password: Password,
     };
 
     dispatch(registerUser(body)).then((response) => {
