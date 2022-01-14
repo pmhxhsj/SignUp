@@ -63,13 +63,17 @@ function LandingPage() {
             </div>
           )}
         </div>
-        <h1 className={styles.logo}>Draw Space</h1>
+        <h1 className={styles.logo}>Happy Tech Life</h1>
         <nav className={styles.menuBar}>
-          <button className={btnStyles.landingPageBtn}>Preview</button>
-          <button className={btnStyles.landingPageBtn}>Photographer</button>
-          <button className={btnStyles.landingPageBtn}>Author</button>
-          <button className={btnStyles.landingPageBtn}>Poet</button>
-          <button className={btnStyles.landingPageBtn}>Artist</button>
+          <Link to='/board1'>
+            <button className={btnStyles.landingPageBtn}>View all</button>
+          </Link>
+          <Link to='/board2'>
+            <button className={btnStyles.landingPageBtn}>Apple</button>
+          </Link>
+          <Link to='/board3'>
+            <button className={btnStyles.landingPageBtn}>Samsung</button>
+          </Link>
         </nav>
 
         <div className={styles.landingImage}>
