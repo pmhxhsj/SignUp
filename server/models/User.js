@@ -31,6 +31,16 @@ const userSchema = mongoose.Schema({
   },
 });
 
+const userWriting = mongoose.Schema({
+  title: {
+    type: String,
+    maxlength: 50,
+  },
+  contents: {
+    type: String,
+  },
+});
+
 userSchema.pre('save', function (next) {
   var user = this;
 
@@ -81,5 +91,5 @@ userSchema.statics.findByToken = function (token, cb) {
   });
 };
 const User = mongoose.model('User', userSchema);
-
-module.exports = { User };
+const UserWriting = mongoose.model('UserWriting', userWriting);
+module.exports = { User, UserWriting };
