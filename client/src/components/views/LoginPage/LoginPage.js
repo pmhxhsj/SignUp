@@ -45,7 +45,7 @@ function Login() {
         <div className={loginPage.loginFormRightSide}>
           <div className={loginPage.topLogoWrap}></div>
           <h1>
-            Would you like to see more of the <strong>Artist's WORK?</strong>
+            Would you like to see more of the <strong>BOARD?</strong>
           </h1>
           <p>
             Easily sign up and log in.

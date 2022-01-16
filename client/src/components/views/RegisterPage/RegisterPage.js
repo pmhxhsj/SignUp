@@ -68,7 +68,7 @@ function RegisterPage() {
             <strong>Thank you for signing up as a member.</strong> <br />
           </h1>
           <p>
-            <strong>-to a great artist-</strong>
+            <strong></strong>
           </p>
         </div>
         <div className={loginPage.loginFormLeftSide}>

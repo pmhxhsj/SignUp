@@ -63,16 +63,16 @@ function LandingPage() {
             </div>
           )}
         </div>
-        <h1 className={styles.logo}>Happy Tech Life</h1>
+        <h1 className={styles.logo}>Happy Sign Up</h1>
         <nav className={styles.menuBar}>
           <Link to='/board1'>
-            <button className={btnStyles.landingPageBtn}>View all</button>
+            <button className={btnStyles.landingPageBtn}>Board1</button>
           </Link>
           <Link to='/board2'>
-            <button className={btnStyles.landingPageBtn}>Apple</button>
+            <button className={btnStyles.landingPageBtn}>Board2</button>
           </Link>
           <Link to='/board3'>
-            <button className={btnStyles.landingPageBtn}>Samsung</button>
+            <button className={btnStyles.landingPageBtn}>Board3</button>
           </Link>
         </nav>
 
