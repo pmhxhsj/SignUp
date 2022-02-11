@@ -5,6 +5,7 @@ const config = require('./config/key');
 const cookieParser = require('cookie-parser');
 const { User } = require('./models/User');
 const { auth } = require('./middleware/auth');
+require('dotenv').config();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -14,7 +15,7 @@ app.use(cookieParser());
 const mongoose = require('mongoose');
 
 mongoose
-  .connect(config.mongoURI)
+  .connect(process.env.REACT_APP_mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected...'))
   .catch((e) => console.log('error: ', e));
 
