@@ -5,12 +5,18 @@ const config = require('./config/key');
 const cookieParser = require('cookie-Parser');
 const { User } = require('./models/User');
 const { auth } = require('./middleware/auth');
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(cookieParser());
 
+// app.get('/', (req, res) => {
+//   res.render('board1', {});
+// });
+
 const mongoose = require('mongoose');
+
 mongoose
   .connect(config.mongoURI)
   .then(() => console.log('MongoDB Connected...'))
@@ -78,7 +84,7 @@ app.get('/api/users/logout', auth, (req, res) => {
 });
 
 app.get('/api/hello', (req, res) => {
-  res.send('안녕하세요~ 나는 박민호에요');
+  res.send('로그인 완료');
 });
 
 const port = 8000;
