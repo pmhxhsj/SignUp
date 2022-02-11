@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const config = require('./config/key');
-const cookieParser = require('cookie-Parser');
+const cookieParser = require('cookie-parser');
 const { User } = require('./models/User');
 const { auth } = require('./middleware/auth');
 
@@ -10,10 +10,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(cookieParser());
-
-// app.get('/', (req, res) => {
-//   res.render('board1', {});
-// });
 
 const mongoose = require('mongoose');
 
